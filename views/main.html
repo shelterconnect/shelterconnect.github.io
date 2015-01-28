@@ -1,0 +1,1 @@
+<div ng-if="!loggedIn()"><ng-include src="'/views/unauthenticated.html'"></ng-include></div><div ng-if="loggedIn()"><ng-include src="'/views/userHome.html'" ng-controller="UserHomeCtrl"></ng-include></div>
