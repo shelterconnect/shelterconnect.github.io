@@ -3,7 +3,7 @@ function performLogin() {
     var email = $("login-email").val();
     var password = $("#login-password").val();
     
-    KiiUser.authenticate(username, password, {
+    KiiUser.authenticate(email, password, {
         success: function(theUser) {
             console.log("User authenticated!");
             console.log(theUser);
