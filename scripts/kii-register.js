@@ -1,8 +1,5 @@
 function performRegistration() {
-    // show a loading animation
-    $.mobile.showPageLoadingMsg();  
     
-    // get the user credentials from the UI
     var username = $("#register-name").val();
     var password = $("#register-password").val();
     
