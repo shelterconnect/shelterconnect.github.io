@@ -20,5 +20,5 @@ $(document).ready(function() {
     // initialize the Kii SDK!
     Kii.initializeWithSite("3548f996", "245e2a0d275ff86e28e3eb0c2e4eb989", KiiSite.US);
     // bind clicks to our login/sign up methods
-    $("#register-button").click(performRegistration);
+    $("#register-button").click(performRegistration());
 });
