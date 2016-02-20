@@ -45,6 +45,6 @@
                 <div ng-show="register.description.$dirty && register.description.$invalid"><small class="error" ng-show="register.description.$error.required">You must provide an description.</small></div>
             </div>
         </div>
-        <button type="submit" id="register-button" ng-disabled="register.$invalid">Register</button>
+        <button type="submit" id="register-button" onclick="performRegistration();" ng-disabled="register.$invalid">Register</button>
     </div>
 </div>
