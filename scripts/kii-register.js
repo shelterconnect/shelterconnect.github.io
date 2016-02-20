@@ -2,8 +2,9 @@ function performRegistration() {
     
     var username = $("#register-name").val();
     var password = $("#register-password").val();
+    var email = $("register-email").val();
     
-    var user = KiiUser.userWithUsername(username, password);
+    var user = KiiUser.userWithEmailAddressAndUsername(email, username, password);
 
     user.register({
         success: function(theUser) {
