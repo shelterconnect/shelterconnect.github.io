@@ -17,6 +17,6 @@
                 <div ng-show="login.password.$dirty && login.password.$invalid"><small class="error" ng-show="login.password.$error.required">You must provide a password.</small> <small class="error" ng-show="login.password.$error.minlength">Passwords must be at least 6 characters in length.</small></div>
             </div>
         </div>
-        <button type="submit" ng-disabled="login.$invalid">Login</button>
+        <button type="submit" id="login-button" ng-disabled="login.$invalid">Login</button>
     </div>
 </div>
