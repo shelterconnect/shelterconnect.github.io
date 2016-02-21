@@ -1,4 +1,7 @@
 <ng-include src="'partials/authMap.html'"></ng-include>
+<google-map style="position:fixed;width:100%;top:0;z-index:-999999;" center="map.center" zoom="map.zoom" draggable="false" options="{disableDefaultUI: true, scrollwheel: false}" class="main-map">
+    <markers models="map.orgs" coords="'location'"></markers>
+</google-map>
 <div class="row" style="z-index: 20">
     <div class="medium-5 small-centered columns panel auth-form">
         <h1>Login</h1>
